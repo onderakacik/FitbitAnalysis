@@ -1,0 +1,14 @@
+name: PBD
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.7
+  - numpy
+  - pandas
+  - jupyterlab
+  - matplotlib
+  - scikit-learn
+  - jupyterlab_code_formatter
+  - yapf
+  - statsmodels
