@@ -12,3 +12,4 @@ dependencies:
   - jupyterlab_code_formatter
   - yapf
   - statsmodels
+  - seaborn
