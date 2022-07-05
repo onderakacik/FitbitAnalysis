@@ -60,7 +60,7 @@ The first question is ”What is the relationship between the number of steps ta
 
 The investigation of the question was started by plotting a regression plot of data points on the dimensions TotalSteps and Calories. As expected, the linear relationship between the TotalSteps and Calories was observed. What is more valuable than observing that relationship is it was noticed that Calories value when TotalSteps equals zero corresponds to Basal Metabolic Rate, shortly BMR. Also, data points with 0 TotalSteps and very low Calories values were observed. Then, it was decided to investigate BMR value for the users and looking more closely to the data points with low Calories values because they might be outliers.
 
-![](Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.001.png)
+![](./Output/Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.001.png)
 
 Figure 1: Regression plot of total step taken and calories burned per a day
 
@@ -72,7 +72,7 @@ The second question is ”What is the relationship between the time spent and th
 
 The investigation of the question was started by plotting a regression plot of data points on the di- mensions of time spent and distance taken for each type of activity. In the regression plots, the slope of regression lines corresponds to the average speed for each type of activity. In the regression plots, it was observed that the regression line is steeper for a more active type of activity. To make sure nu- merically, a linear regression model was fitted for each category and the slopes of the linear regression lines were compared. As expected, the slope for VeryActiveDistance/VeryActiveMinutes is 0,067, the slope for ModeratelyActiveDistance/FairlyActiveMinutes is 0,042, the slope for LightActiveDis- tance/LightlyActiveMinutes is 0,017 and the slope for SedentaryActiveDistance/SedentaryMinutes is 0,000.
 
-![](Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.002.png)
+![](./Output/Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.002.png)
 
 Figure 2: Regression plot of data points on the dimensions of time spent and distance taken for each type of activity
 
@@ -82,23 +82,23 @@ The third question is ”Is it possible to cluster users into two groups as less
 
 The investigation of the question was started by plotting the distribution of sedentary minutes. It was noticed that for the density of the distribution there are two peaks, one around 600 Seden- taryMinutes and the other around 1250 SedentaryMinutes. In addition, the distribution of average sedentary minutes per user was plotted and a jump after the user with Id: ’7086361926’ was ob- served. Lastly, the average sedentary minutes of the data were calculated and it was observed that the discrimination of two peaks of the first distribution and the jump of the second distribution correspond to the average value calculated. Therefore, the users can be clustered into two groups using the average as a criterion. Then a new column that indicates whether being more sedentary or not was added.
 
-![](Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.003.png)
+![](./Output/Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.003.png)
 
 Figure 3: Distribution of sedentary minutes using histogram and kernel density estimator
 
-![](Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.004.png)
+![](./Output/Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.004.png)
 
 Figure 4: Distribution of of average sedentary minutes per user
 
 Then, the behavior of those two groups change depending on their weekdays or weekends was plotted using boxplots. It was observed that for the less sedentary group, users tend to be more sedentary on the weekdays. While the difference between weekdays and weekends for the more sedentary group is not that remarkable.
 
-![](Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.005.png)
+![](./Output/Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.005.png)
 
 Figure 5: Boxplot of sedentary minutes depending on the two groups and whether it is weekend or not
 
 Lastly, whether two groups differ in the total time that they sleep per day or not was investigated by plotting boxplots of two groups for total minutes asleep. It was observed that the average total sleeping time for the less sedentary group is greater than the average total sleeping time for the more sedentary group. In addition, it was observed that the more sedentary group has a wider range of data points for total minutes asleep. That might be because some more sedentary people tend to sleep less because they are not getting that tired during the daytime and some more sedentary people are sleeping a lot because they live a lazy lifestyle.
 
-![](Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.006.png)
+![](./Output/Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.006.png)
 
 Figure 6: Boxplot of total minutes asleep per day for the two groups
 
@@ -116,7 +116,7 @@ We then identified each record based on the amount of sleep. We used
 
 three bins which identified three distinct ranges. The ranges were as-
 
-signed based on the suggestions from the Sleep Foundation [2].[ W](#_page15_x81.64_y267.31)e Figure 7: Sleep distribu- defined the records which got between 7-9 hours of sleep as ’good’, tion.![](Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.007.png)
+signed based on the suggestions from the Sleep Foundation [2].[ W](#_page15_x81.64_y267.31)e Figure 7: Sleep distribu- defined the records which got between 7-9 hours of sleep as ’good’, tion.![](./Output/Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.007.png)
 
 those which got less as ’deprived’ and lastly those which got more than
 
@@ -148,7 +148,7 @@ ers’.
 
 What are the activity habits of those who sleep the best and the worst?
 
-![](Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.008.png)
+![](./Output/Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.008.png)
 
 Figure 8: Different activities of good and bad sleepers
 
@@ -162,7 +162,7 @@ active minutes among the two groups of good sleepers vs bad sleepers.
 
 Plot 9 shows us that there are some significant differences among the Figure 9: Sedentary vs users which sleep enough and those who do not. In fact we can see that Sleep
 
-regarding calories consumption, the better sleeping group burns much ![](Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.009.png)less calories than the opposite side. Secondly, on average good sleepers walk a little more and the interquartile range is more packed, while bad sleepers appear to be moving much more but with much more variability in the amount of steps. Lastly, as we stated before good sleepers are more active on average, and again the iqr is more packed. In both good and bad sleepers there are outliers in opposite directions, and good sleepers have tighter min-max values 
+regarding calories consumption, the better sleeping group burns much ![](./Output/Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.009.png)less calories than the opposite side. Secondly, on average good sleepers walk a little more and the interquartile range is more packed, while bad sleepers appear to be moving much more but with much more variability in the amount of steps. Lastly, as we stated before good sleepers are more active on average, and again the iqr is more packed. In both good and bad sleepers there are outliers in opposite directions, and good sleepers have tighter min-max values 
 
 These findings show an interesting version of the facts. Those which sleep better do not burn more calories than those who sleep badly.
 
@@ -184,11 +184,11 @@ Because for most of the adults, between 60 and 100 beats per minute (bpm) is nor
 
 But since we don’t have any more data about the user it wouldn’t be safe to say this user may be experiencing health problems. For some cases, user being an athlete may explain relatively low heart rates like this throughout the day. And since gender, age and health status are unknown,
 
-![](Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.010.png)
+![](./Output/Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.010.png)
 
 Figure 10: Average Heart Rate Throughout the Dates
 
-![](Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.011.png)
+![](./Output/Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.011.png)
 
 Figure 11: Average Heart Rate During the Week
 
@@ -204,13 +204,13 @@ We will first investigate which hours users are most active during the day.
 
 From Figure 12, we can see that users start to become more active between 6 and 8 am. The peak hours seem to occur between 5 and 7 pm, this is probably because people choose to work out after their work/school. And after 8pm, activity levels start decreasing, probably because people go to bed at that time.
 
-![](Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.012.png)
+![](./Output/Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.012.png)
 
 Figure 12: Calories by Time of the Day
 
 We burn around 50 calories an hour [2][ while](#_page15_x81.64_y267.31) we sleep and can see that in Figure 12. As the users wake up and start exercising, the number of calories burned increases, and peaks around the same time that the users are most active during the day.
 
-![](Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.013.png)
+![](./Output/Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.013.png)
 
 Figure 13: Steps by Time of the Day
 
@@ -218,17 +218,17 @@ Looking at Figure 14, we can safely say that most of the exercise is done betwee
 
 Now we will investigate which days users are most active during the week, we will use calories burned and the total distance data. From Figure 15 and Figure 16, we can see that users seem a little less motivated to work out on Sundays and Thursdays. But overall activity level and amount of activity don’t change much with different days of the week.
 
-![](Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.014.png)
+![](./Output/Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.014.png)
 
 Figure 14: Average Heart Rate During the Day
 
-![](Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.015.png)
+![](./Output/Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.015.png)
 
 Figure 15: Calories by Day of the Week
 
 In conclusion, we couldn’t find a pattern for the days people choose to exercise more, it seems like amount of activity is equally divided among the days of the week. On the other hand, it is clear that users have a specific preferences when it comes to when they want to exercise during the day.
 
-![](Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.016.png)
+![](./Output/Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.016.png)
 
 Figure 16: Distance by by Day of the Week
 
@@ -238,7 +238,7 @@ Figure 16: Distance by by Day of the Week
 
 Our goal for this section was to predict number of steps. To decide which features we are going to use in our prediction, we first want to see the relationship between several features in the dataset. For this, we can take a look at the correlation between the predictors. From Figure 15, we can see that there is a strong relationship between number of steps and the the other features.
 
-![](Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.017.png)
+![](./Output/Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.017.png)
 
 Figure 17: Correlation matrix Here are few interesting findings not related to the number of steps.
 
@@ -262,7 +262,7 @@ In order to predict the steps count, we split our data into train(80%) and test(
 
 We fit 3 models to our training dataset: linear regression, ridge regression and random forest regression models. Ridge regression seems to be well suited for the nature of this prediction problem since it has a lower value of RMSE.
 
-![](Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.018.png)
+![](./Output/Aspose.Words.2f07cfe1-0869-4616-b134-c7eb33a2dd8e.018.png)
 
 Figure 18: Ridge Regression Model Predictions
 
