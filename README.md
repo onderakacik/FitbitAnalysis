@@ -1,4 +1,4 @@
-﻿Project Big Data - Group 22 Fitbit Analysis 
+[Kaggle Notebook](https://www.kaggle.com/code/zipzipzip/fitbit-data-analysis-python)
 
 Yildiz, Damla Akaçık, Onder Giaj Levra, Federico
 
